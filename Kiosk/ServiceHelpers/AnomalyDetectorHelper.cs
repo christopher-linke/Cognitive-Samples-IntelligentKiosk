@@ -42,8 +42,10 @@ namespace ServiceHelpers
     public class AnomalyDetectorHelper : ServiceBase
     {
         private static readonly string HEADER_SUB_KEY = "Ocp-Apim-Subscription-Key";
-        private static readonly Uri BATCH_SERVICE_URL = new Uri("https://westus2.api.cognitive.microsoft.com/anomalydetector/v1.0/timeseries/entire/detect");
-        private static readonly Uri STREAMING_SERVICE_URL = new Uri("https://westus2.api.cognitive.microsoft.com/anomalydetector/v1.0/timeseries/last/detect");
+        //private static readonly Uri BATCH_SERVICE_URL = new Uri("https://westus2.api.cognitive.microsoft.com/anomalydetector/v1.0/timeseries/entire/detect");
+        //private static readonly Uri STREAMING_SERVICE_URL = new Uri("https://westus2.api.cognitive.microsoft.com/anomalydetector/v1.0/timeseries/last/detect");
+        private static readonly Uri BATCH_SERVICE_URL = new Uri("https://anomalydetectorchli.cognitiveservices.azure.com/anomalydetector/v1.0/timeseries/entire/detect");
+        private static readonly Uri STREAMING_SERVICE_URL = new Uri("https://anomalydetectorchli.cognitiveservices.azure.com/anomalydetector/v1.0/timeseries/last/detect");
 
         private static IDictionary<string, string> defaultRequestHeaders;
 
